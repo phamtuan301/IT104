@@ -4,10 +4,10 @@ int find(int arr[], int n) {
     int i, j;
     int max = 0;
     int most = arr[0];
-    for (i = 1; i < n; i++) {
+    for (i = 0; i < n; i++) {
         int count = 1;
         int isCount = 0;
-        for (j = 0; j < n; j++) {
+        for (j = 0; j < i; j++) {
             if (arr[i] == arr[j]) {
                 isCount = 1;
                 break;

@@ -7,3 +7,4 @@ int* mallocArray(int n ) {
     }
     return arr;
 }
+//do phuc tap O(n)

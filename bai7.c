@@ -14,7 +14,7 @@ int check(int arr[], int n) {
 int check2(int arr[], int n) {
     int saw[1000] = {0};
     for (int i = 0; i < n; i++) {
-        if (seen[arr[i]]) {
+        if (saw[arr[i]]) {
             return 1;
         }
         saw[arr[i]] = 1;
@@ -26,6 +26,6 @@ int check2(int arr[], int n) {
 int main () {
     int arr[]={1, 2, 3, 4, 5, 6, 7, 8, 9, 10,1,2,3,4,5,6,7,8,9};
     int n = sizeof(arr)/sizeof(arr[0]);
-    printf("Mang", check1(arr, n) ? "co trung" : "khong trung")
+    printf("Mang %s\n", check(arr, n) ? "co trung" : "khong trung");
     return 0;
 }

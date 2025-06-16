@@ -6,11 +6,13 @@ int sum1(int n) {
     }
     return sum;
 }
-//do phuc tap O(n)
+//do phuc tap thoi gian O(n)
+//do phuc tap khong gian 0(1)
 int sum2(int n) {
     return n * (n + 1) / 2;
 }
 //do phuc tap O(1)
+//do phuc tap khong gian O(1)
 int main () {
     int n = 10;
     int sumloop = sum1(n);
